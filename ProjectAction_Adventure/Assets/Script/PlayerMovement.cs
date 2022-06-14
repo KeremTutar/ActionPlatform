@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rgb2d.velocity = new Vector2(rgb2d.velocity.x, rgb2d.velocity.y * 0.5f);
         }
+
     }
 
     private void FixedUpdate()

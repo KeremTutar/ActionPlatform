@@ -625,6 +625,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd320de321da63143b608e6b345b4712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 6729317639475568126, guid: 909833e5e6581d44187ffe2214fb7ae7, type: 3}
+  bulletTransform: {fileID: 1646947892}
+  canFire: 1
+  timeBetweenFiring: 0.3
 --- !u!212 &1162644717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -735,7 +739,7 @@ GameObject:
   - component: {fileID: 1541898011}
   m_Layer: 6
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1029,7 +1033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646947891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.76, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1162644715}
