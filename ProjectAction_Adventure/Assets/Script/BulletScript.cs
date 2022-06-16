@@ -9,7 +9,9 @@ public class BulletScript : MonoBehaviour
     private Rigidbody2D rgb2d;
     public float force;
     public GameObject bulletMark;//kurþun bir yere çarptýðýnda olan animasyon
+
     
+
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -19,7 +21,7 @@ public class BulletScript : MonoBehaviour
         Vector3 rotation = transform.position - mousePos;
         rgb2d.velocity = new Vector2(direction.x, direction.y).normalized * force;
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
+        transform.rotation = Quaternion.Euler(0, 0, rot + 90);      
         
     }
     

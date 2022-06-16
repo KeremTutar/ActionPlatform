@@ -11,10 +11,14 @@ public class Shooting : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
-    
+
+    private CameraShake shake;
+
     void Start()
     {
         MainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CameraShake>();
     }
 
     void Update()
@@ -37,7 +41,7 @@ public class Shooting : MonoBehaviour
         {
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
-            
+            shake.CamShake();
 
         }
         
